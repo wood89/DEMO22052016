@@ -17,6 +17,10 @@ http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <bean name="message" class="io.khasang.demo.model.Message">
+    <constructor-arg value="Hello constructor bean"/>
+</bean>
+
     <mvc:default-servlet-handler/>
 
     <!-- resources exclusions from servlet mapping -->
